@@ -1,5 +1,7 @@
 package com.tnsif.prog;
 
+import java.util.Scanner;
+
 public class Executor {
 
 	public static void main(String[] args) {
@@ -8,6 +10,11 @@ public class Executor {
 		ob.forward();// calling the member function of the CarClass
 		ob.backward();
 		ob.stop();
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Amount is "+ob.amt);
+		
+		System.out.println("REG is "+ob.reg);
 	}
 
 }
