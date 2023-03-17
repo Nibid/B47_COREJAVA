@@ -6,9 +6,13 @@ public class CarClass {
 	// Data members for the class
 	int model;
 	String color;
-	int reg=111;
+	int reg;
 	int amt=10000;
 	// Member functions for the class
+	
+	CarClass() {
+		System.out.println("Model "+model+" Reg "+reg);
+	}
 	void forward() {
 		System.out.println("Car is moving in forward direction");
 	}
