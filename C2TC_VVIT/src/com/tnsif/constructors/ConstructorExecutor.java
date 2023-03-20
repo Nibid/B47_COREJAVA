@@ -15,16 +15,22 @@ public class ConstructorExecutor {
 		id = sc.nextInt();
 		
 		System.out.println("Enter the customer name");
-		name = sc.nextLine();
+		name = sc.next();// read the line
+		sc.nextLine();// this is to process the new line
 		
 		System.out.println("Enter the customer city");
 		city = sc.nextLine();
 		
-		Customer ob = new Customer();
-		ob.setCustomerId(id);
-		ob.setCustomerName(name);
-		ob.setCustomerCity(city);
+		//Default Constructor will be invoked
+//		Customer c1 = new Customer();
+//		c1.setCustomerId(id);
+//		c1.setCustomerName(name);
+//		c1.setCustomerCity(city);
+//		System.out.println(c1.getCustomerId()+" "+c1.getCustomerName()+" "+c1.getCustomerCity());
 		
+		
+		//Parameterized Constructor will be invoked
+		Customer c2 = new Customer(id,name,city);
 	}
 
 }

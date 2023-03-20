@@ -8,6 +8,7 @@ public class Customer {
 	//default constructor
 	public Customer() {
 		//super();
+		System.out.println("Default constructor");
 	}
 
 	//parameterized constructor
@@ -16,6 +17,8 @@ public class Customer {
 		this.customerId = customerId;
 		this.customerName = customerName;
 		this.customerCity = customerCity;
+		System.out.println("parameterized Const");
+		System.out.println("id "+customerId+" name "+customerName+" city "+customerCity);
 	}
 	
 	public int getCustomerId() {
@@ -35,6 +38,14 @@ public class Customer {
 	}
 	public void setCustomerCity(String customerCity) {
 		this.customerCity = customerCity;
+	}
+
+	@Override
+	public String toString() {
+		return "Customer [customerId=" + customerId + ", customerName=" + customerName + ", customerCity="
+				+ customerCity + ", getCustomerId()=" + getCustomerId() + ", getCustomerName()=" + getCustomerName()
+				+ ", getCustomerCity()=" + getCustomerCity() + ", getClass()=" + getClass() + ", hashCode()="
+				+ hashCode() + ", toString()=" + super.toString() + "]";
 	}
 
 }
