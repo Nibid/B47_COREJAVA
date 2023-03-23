@@ -1,6 +1,6 @@
 package com.tnsif.clz;
 
-import cm.tnsif.std.Std;
+import com.tnsif.std.Std;
 
 public class Clz extends Std {
 	void display() {

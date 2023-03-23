@@ -1,4 +1,4 @@
-package cm.tnsif.std;
+package com.tnsif.std;
 
 public class Std {
 	String name = "Nibid";
