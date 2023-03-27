@@ -5,11 +5,11 @@ public class AbstractionDemo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Square sq = new Square();
-		Rectangle r = new Rectangle();
+		Rectangle rect = new Rectangle();
 		sq.calArea();
 		sq.show();
-		r.calArea();
-		r.show();
+		rect.calArea();
+		rect.show();
 		
 		// Use the concept of function overloading
 //		Shape sh = new Shape();
@@ -23,5 +23,4 @@ public class AbstractionDemo {
 		s.show();
 
 	}
-
 }
