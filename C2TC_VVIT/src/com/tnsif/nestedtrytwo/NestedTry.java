@@ -3,7 +3,7 @@ package com.tnsif.nestedtrytwo;
  * demonstrate that invoking ArithmeticException & NullPointerException nested
  */
 public class NestedTry {
-	int nestedtry(int x, int y, String ptr)
+	int nestedtry(int x, int y, String ptr, int a[])
 	{
 		int z = 0;
 		// outer (main) try block  
@@ -15,10 +15,19 @@ public class NestedTry {
 	        else
 	            System.out.println("Not Same");
 			
-			//inner try block
+			//inner try block 1
 			try {
 				z = x/y;
 				System.out.println(z);
+				
+				try {  
+				    //assigning the value out of array bounds  
+				     a[5]=4;
+					
+				}
+				catch(ArrayIndexOutOfBoundsException ab) {
+					
+				}
 			}
 			// to handles ArithmeticException 
 			catch(ArithmeticException ar) {

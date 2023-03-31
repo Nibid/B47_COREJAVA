@@ -15,10 +15,12 @@ public class NestedDemo {
 		// Initializing String variable with null value
         String ptr = null;
         
+        int a[]=new int[5]; 
+        
 		System.out.println("value of x and y "+x+" "+y);
         
         NestedTry obj = new NestedTry();
-		obj.nestedtry(x,y,ptr); 
+		obj.nestedtry(x,y,ptr,a); 
 
 	}
 
