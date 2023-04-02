@@ -20,12 +20,14 @@ public class NestedTry {
 				z = x/y;
 				System.out.println(z);
 				
+				//inner try block 2
 				try {  
 				    //assigning the value out of array bounds  
 				     a[5]=4;
 					
 				}
 				catch(ArrayIndexOutOfBoundsException ab) {
+					System.out.println("ArrayIndexOutOfBoundsException");
 					
 				}
 			}
