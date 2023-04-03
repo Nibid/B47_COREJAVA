@@ -9,7 +9,7 @@ public class TestClass {
 		System.out.println();
 		age = sc.nextInt();
 		if(age < 10) {
-			throw new Age("Invalid Age, You are not eligible to vote");
+			throw new Age("You are not eligible to vote");
 		}else {
 			System.out.println("Welcome to vote");
 		}
@@ -20,7 +20,7 @@ public class TestClass {
 		try {
 			validate();// function which rise the exception
 		} catch(Exception e) {
-			System.out.println("Caught an Exception:\n "+e);
+			System.out.println("Exception:\n "+e);
 		}
 
 	}
