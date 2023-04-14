@@ -2,6 +2,7 @@ package com.tnsif.comparator;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 class ComparatorDemo {
 
@@ -21,7 +22,7 @@ class ComparatorDemo {
 		}
 		
 		//Sorted by Roll no	
-		Collections.sort(st,new SortByRollNo());
+		Collections.sort(st, new SortByRollNo());
 		System.out.println("Sorting by Roll No");
 		for(int i=0;i<st.size();i++) {
 			System.out.println(st.get(i));
